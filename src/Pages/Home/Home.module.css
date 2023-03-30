@@ -1,0 +1,31 @@
+.wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.field {
+    display: block;
+    height: 30px;
+    width: 260px;
+    border-radius: 31px;
+    background-color: #002E4E;
+    border: none;
+    text-align: center;
+    color: white;
+}
+.field:focus {
+    outline: none;
+    background-color: #00406c;
+}
+.field::placeholder {
+    text-align: center;
+    color: #7E7E7E;
+}
