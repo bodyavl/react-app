@@ -1,13 +1,15 @@
-import React from 'react'
-import s from './Message.module.scss'
+import React from "react";
+import s from "./Message.module.scss";
 
-const Message = ({children, username}) => {
+const Message = ({ children, username, index }) => {
   return (
-    <li className={s.messageBox}>
+    <li key={index}>
+      <div className={s.messageBox}>
         <div className={s.username}>{username}</div>
         <div className={s.message}>{children}</div>
-    </li> 
-  )
-}
+      </div>
+    </li>
+  );
+};
 
-export default Message
+export default Message;
