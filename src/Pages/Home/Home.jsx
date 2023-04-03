@@ -1,13 +1,25 @@
 import React from 'react'
-import s from './Home.module.css'
+import { useNavigate } from 'react-router-dom'
+import Button from '../../Components/Button/Button'
+import Input from '../../Components/Input/Input'
+import s from './Home.module.scss'
+
 const Home = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate('chat')
+  }
   return (
-    <div className={s.wrapper}>
-      <form action="">
-        <label htmlFor="username" className={s.label}>Enter a username</label>
-        <input className={s.field} type="text" placeholder="username" id='username'/>
+    <>
+      <form onSubmit={handleSubmit} className="container-sm">
+        <div className={s.wrapper}>
+          <label htmlFor="username" className={s.label}>Enter a username</label>
+          <Input placeholder={"username"} id={"username"} />
+          <Button className={s.button}>Login</Button>
+        </div>
       </form>
-    </div>
+    </>
   )
 }
 

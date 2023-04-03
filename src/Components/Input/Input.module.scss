@@ -1,0 +1,17 @@
+.field {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: center;
+    background: #F48C06;
+    border-radius: 27px;
+    width: 864px;
+    height: 63px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #03071E;
+}
+
+.field::placeholder {
+    color: #03071E;
+}
