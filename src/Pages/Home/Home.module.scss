@@ -1,0 +1,17 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 21px;
+
+    & .label {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+
+        color: #D00000;
+
+    }
+}
