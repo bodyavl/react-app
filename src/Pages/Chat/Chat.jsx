@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 const Chat = ({socket}) => {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
+  
   useEffect(() => {
     socket.on('receive message', message => {
       displayMessage(message.text, message.username)
